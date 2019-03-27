@@ -74,7 +74,7 @@ html, body {
 }
 
 body {
-    background: #111111;
+    background: #000000;
     font-family: "lora-regular", serif;
     font-size: 1.7rem;
     font-style: normal;
@@ -1465,6 +1465,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+.header-logo :hover{
+        position: relative;
+        padding: 0 5px;
+        opacity: 1;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        z-index: 1;
+}
 
 
 /* ------------------------------------------------------------------- 
@@ -1718,10 +1725,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
     .s-header {
-        height: 90px;
+        height: 80px;
     }
     .header-logo {
-        left: 30px;
+        left: 20px;
     }
     .header-menu-toggle {
         right: 25px;
@@ -2469,15 +2476,14 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-    background: #FFFFFF;
-    padding: 0 0 15rem 0;
+    padding: 0 0 20rem 0;
     min-height: 800px;
     position: relative;
 }
 
 .s-works .intro-wrap {
     padding: 15rem 0 25.2rem;
-    background: #111111;
+    background: #000000;
 }
 
 .works-content {
@@ -2700,219 +2706,14 @@ html.no-csstransitions .home-content__main {
     }
 }
 
-
-
-/* ===================================================================
- * # clients
- *
- * ------------------------------------------------------------------- */
-.s-clients {
-    padding-top: 16.2rem;
-    padding-bottom: 16.8rem;
-    background-color: #e6e6e6;
-    color: #757575;
-    position: relative;
-}
-
-
-/* ------------------------------------------------------------------- 
- * ## slider
- * ------------------------------------------------------------------- */
-.clients-outer {
-    margin-top: 3.6rem;
-    padding-bottom: 9rem;
-    text-align: center;
-    position: relative;
-}
-
-.clients__slide {
-    display: block;
-    opacity: .55;
-    padding: 1.5rem 2.8rem;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.clients__slide:hover, .clients__slide:focus {
-    opacity: 1;
-}
-
-
-/* ------------------------------------------------------------------- 
- * ## testimonials
- * ------------------------------------------------------------------- */
-.clients-testimonials {
-    margin-top: 4.2rem;
-    padding-top: 7.2rem;
-    text-align: center;
-    position: relative;
-}
-
-.clients-testimonials::before {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 550px;
-    background-color: rgba(0, 0, 0, 0.1);
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.clients-testimonials .testimonials {
-    margin: 0 10%;
-}
-
-.clients-testimonials .testimonials p {
-    font-family: "lora-regular", serif;
-    font-size: 3rem;
-    line-height: 1.8;
-    color: #555555;
-    margin-bottom: 6rem;
-}
-
-.clients-testimonials .testimonials__slide {
-    padding: 0 0 3rem 0;
-}
-
-.clients-testimonials .testimonials__avatar {
-    height: 8.4rem;
-    width: 8.4rem;
-    border-radius: 50%;
-    margin: 0 auto 1.2rem auto;
-}
-
-.clients-testimonials .testimonials__name, 
-.clients-testimonials .testimonials__pos {
-    display: block;
-}
-
-.clients-testimonials .testimonials__name {
-    font-family: "montserrat-semibold", sans-serif;
-    color: #000000;
-}
-
-.clients-testimonials .testimonials__pos {
-    font-family: "montserrat-light", sans-serif;
-    font-size: 1.4rem;
-}
-
-.clients-testimonials .testimonials .slick-arrow {
-    position: absolute;
-    top: 7.2rem;
-    width: 66px;
-    height: 66px;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: 22px 15px;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
-    z-index: 2;
-}
-
-.clients-testimonials .testimonials .slick-prev {
-    left: -130px;
-    background-image: url("../images/left-arrow.png");
-}
-
-.clients-testimonials .testimonials .slick-next {
-    right: -130px;
-    background-image: url("../images/right-arrow.png");
-}
-
-.clients-testimonials .testimonials .slick-dots {
-    margin-top: -0.6px;
-}
-
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * clients
- * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1200px) {
-    .clients-testimonials .testimonials {
-        margin: 0 12%;
-    }
-    .clients-testimonials .testimonials p {
-        font-size: 2.6rem;
-    }
-    .clients-testimonials .testimonials .slick-prev {
-        left: -100px;
-    }
-    .clients-testimonials .testimonials .slick-next {
-        right: -100px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .clients-testimonials .testimonials p {
-        font-size: 2.2rem;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .clients-testimonials::before {
-        width: 400px;
-    }
-    .clients-testimonials .testimonials {
-        margin: 0 2rem;
-    }
-    .clients-testimonials .testimonials .slick-arrow {
-        top: auto;
-        bottom: 3rem;
-    }
-    .clients-testimonials .testimonials .slick-prev {
-        left: 0;
-    }
-    .clients-testimonials .testimonials .slick-next {
-        right: 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .s-clients {
-        padding-top: 12rem;
-    }
-    .clients-testimonials::before {
-        width: 250px;
-    }
-    .clients-testimonials .testimonials {
-        margin: 0;
-    }
-    .clients-testimonials .testimonials p {
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .clients-testimonials .testimonials p {
-        font-size: 1.9rem;
-    }
-}
-
-
-
 /* ===================================================================
  * # contact 
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-    background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center, center;
+    background-image: url("../images/contact.jpg");
+    background-repeat: repeat;
+    background-position: top, center;
     padding-top: 15rem;
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);
@@ -2925,8 +2726,8 @@ html.no-csstransitions .home-content__main {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .8;
-    background-color: #151515;
+    opacity: .4;
+    background-color: #000000;
 }
 
 .s-contact .form-field {
@@ -2969,7 +2770,7 @@ html.no-csstransitions .home-content__main {
     display: block;
     width: 2px;
     height: 20.4rem;
-    background-color: #39b54a;
+    background-color: #69779b;
     position: absolute;
     left: 50%;
     top: -10.2rem;
@@ -3308,28 +3109,12 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 footer {
-    padding: 9rem 0 6rem;
+    padding: 0.5rem 0 5rem;
     font-family: "montserrat-light", sans-serif;
     font-size: 15px;
     line-height: 2;
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
-}
-
-footer h4 {
-    color: #FFFFFF;
-    font-size: 1.6rem;
-    line-height: 1.313;
-    margin-top: 0;
-    margin-bottom: 3.6rem;
-}
-
-footer a {
-    color: #FFFFFF;
-}
-
-footer a:hover, footer a:focus, footer a:active {
-    color: #39b54a;
 }
 
 footer .row {
@@ -3352,97 +3137,12 @@ footer .row {
     padding-left: 40px;
 }
 
-.footer-logo {
-    display: block;
-    margin: -.6rem 0 3.6rem 0;
-    padding: 0;
-    outline: 0;
-    border: none;
-    width: 85px;
-    height: 28px;
-    background: url("../images/logo-footer.png") no-repeat center;
-    background-size: 85px 28px;
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.footer-subscribe .subscribe-form {
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-.footer-subscribe #mc-form {
-    width: 100%;
-}
-
-.footer-subscribe #mc-form input[type="email"] {
-    width: 100%;
-    height: 5.4rem;
-    padding: 1.2rem 160px 1.2rem 60px;
-    background: url(../images/email-icon.png) 20px center no-repeat, rgba(0, 0, 0, 0.1);
-    background-size: 24px 16px, auto;
-    border: none;
-    margin-bottom: 1.8rem;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.footer-subscribe #mc-form input[type="email"]:focus {
-    color: #FFFFFF;
-}
-
-.footer-subscribe #mc-form input[type="email"]::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.2);
-}
-
-.footer-subscribe #mc-form input[type="email"]:-moz-placeholder {
-    color: rgba(255, 255, 255, 0.2);
-    /* Firefox 18- */
-}
-
-.footer-subscribe #mc-form input[type="email"]::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.2);
-    /* Firefox 19+ */
-}
-
-.footer-subscribe #mc-form input[type="email"]:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.2);
-}
-
-.footer-subscribe #mc-form input[type="email"].placeholder {
-    color: rgba(255, 255, 255, 0.2) !important;
-}
-
-.footer-subscribe #mc-form input[type=submit] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #FFFFFF;
-    background: #39b54a;
-    border-color: #39b54a;
-    padding: 0 20px;
-}
-
-.footer-subscribe #mc-form label {
-    color: #FFFFFF;
-    font-family: "montserrat-regular", sans-serif;
-    font-size: 1.3rem;
-    padding: 0 2rem;
-}
-
-.footer-subscribe #mc-form label i {
-    padding-right: 6px;
-}
-
 
 /* ---------------------------------------------------------------
  * ## footer bottom
  * --------------------------------------------------------------- */
 .footer-bottom {
-    margin-top: 5.4rem;
+    margin-top: 3rem;
     text-align: center;
     font-size: 14px;
 }
