@@ -832,9 +832,9 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-    background: #39b54a;
-    border-color: #39b54a;
-    color: #FFFFFF;
+    background: #ffce76;
+    border-color: #ffce76;
+    color: #1d1919;
 }
 
 .btn.btn--primary:hover,
@@ -847,8 +847,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-    background: #33a242;
-    border-color: #33a242;
+    background: #f0ece2;
+    border-color: #f0ece2;
 }
 
 
@@ -2713,7 +2713,6 @@ html.no-csstransitions .home-content__main {
 .s-contact {
     background-image: url("../images/contact.jpg");
     background-repeat: repeat;
-    background-position: top, center;
     padding-top: 15rem;
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);
@@ -2866,7 +2865,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-primary {
-    width: 65%;
+    width: 100%;
 }
 
 .contact-primary #contactForm {

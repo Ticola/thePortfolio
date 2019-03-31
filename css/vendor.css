@@ -1386,9 +1386,7 @@ over element that should close gallery
 
 @media (-webkit-min-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.09375), (min-resolution: 105dpi), (min-resolution: 1.1dppx) {
     /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
-    .pswp--svg .pswp__button, .pswp--svg .pswp__button--arrow--left:before, .pswp--svg .pswp__button--arrow--right:before {
-        background-image: url(images/photoswipe/default-skin.svg);
-    }
+ 
     .pswp--svg .pswp__button--arrow--left, .pswp--svg .pswp__button--arrow--right {
         background: none;
     }
@@ -1398,21 +1396,6 @@ over element that should close gallery
     background-position: 0 -44px;
 }
 
-.pswp__button--share {
-    background-position: -44px -44px;
-}
-
-.pswp__button--fs {
-    display: none;
-}
-
-.pswp--supports-fs .pswp__button--fs {
-    display: block;
-}
-
-.pswp--fs .pswp__button--fs {
-    background-position: -44px 0;
-}
 
 .pswp__button--zoom {
     display: none;
@@ -1482,131 +1465,7 @@ Arrow buttons hit area
  * ## 2. Share modal/popup and links
  * ------------------------------------------------------------------- */
 
-.pswp__counter, .pswp__share-modal {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.pswp__share-modal {
-    display: block;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    position: absolute;
-    z-index: 1600;
-    opacity: 0;
-    -webkit-transition: opacity 0.25s ease-out;
-    transition: opacity 0.25s ease-out;
-    -webkit-backface-visibility: hidden;
-    will-change: opacity;
-}
-
-.pswp__share-modal--hidden {
-    display: none;
-}
-
-.pswp__share-tooltip {
-    z-index: 1620;
-    position: absolute;
-    background: #FFF;
-    top: 56px;
-    border-radius: 3px;
-    display: block;
-    width: auto;
-    right: 44px;
-    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
-    transform: translateY(6px);
-    -webkit-transition: -webkit-transform 0.25s;
-    transition: transform 0.25s;
-    -webkit-backface-visibility: hidden;
-    will-change: transform;
-}
-
-.pswp__share-tooltip a {
-    display: block;
-    padding: 9px 15px;
-    color: #000;
-    text-decoration: none;
-    font-size: 13px;
-    line-height: 18px;
-}
-
-.pswp__share-tooltip a:hover {
-    text-decoration: none;
-    color: #000;
-}
-
-.pswp__share-tooltip a:first-child {
-    /* round corners on the first/last list item */
-    border-radius: 3px 3px 0 0;
-}
-
-.pswp__share-tooltip a:last-child {
-    border-radius: 0 0 3px 3px;
-}
-
-.pswp__share-modal--fade-in {
-    opacity: 1;
-}
-
-.pswp__share-modal--fade-in .pswp__share-tooltip {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-}
-
-
 /* increase size of share links on touch devices */
-
-.pswp--touch .pswp__share-tooltip a {
-    padding: 16px 12px;
-}
-
-a.pswp__share--facebook:before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: -12px;
-    right: 15px;
-    border: 6px solid transparent;
-    border-bottom-color: #FFF;
-    -webkit-pointer-events: none;
-    -moz-pointer-events: none;
-    pointer-events: none;
-}
-
-a.pswp__share--facebook:hover {
-    background: #3E5C9A;
-    color: #FFF;
-}
-
-a.pswp__share--facebook:hover:before {
-    border-bottom-color: #3E5C9A;
-}
-
-a.pswp__share--twitter:hover {
-    background: #55ACEE;
-    color: #FFF;
-}
-
-a.pswp__share--pinterest:hover {
-    background: #CCC;
-    color: #CE272D;
-}
-
-a.pswp__share--download:hover {
-    background: #DDD;
-}
 
 
 /* -------------------------------------------------------------------
