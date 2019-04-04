@@ -2751,7 +2751,7 @@ html.no-csstransitions .home-content__main {
     padding: 0 2rem;
     margin: 0;
     color: #FFFFFF;
-    background: #39b54a;
+    background: #0075f6;
 }
 
 .s-contact .form-field label::after {
@@ -2762,7 +2762,7 @@ html.no-csstransitions .home-content__main {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #39b54a;
+    border-right: 5px solid #0075f6;
 }
 
 .contact__line {
@@ -2796,7 +2796,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-content h5 {
     margin-top: 0;
-    color: #39b54a;
+    color: #ffce76;
 }
 
 .contact-content input[type="email"],
@@ -2823,7 +2823,7 @@ html.no-csstransitions .home-content__main {
 .contact-content textarea:focus,
 .contact-content select:focus {
     color: #FFFFFF;
-    border-bottom: 1px solid #39b54a;
+    border-bottom: 1px solid #ffce76;
 }
 
 .contact-content button,
@@ -2914,7 +2914,7 @@ html.no-csstransitions .home-content__main {
 
 .contact-social li a:hover, 
 .contact-social li a:focus {
-    color: #39b54a;
+    color: #ffce76;
 }
 
 .contact-social li:last-child {
