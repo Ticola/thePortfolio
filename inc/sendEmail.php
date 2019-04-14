@@ -1,5 +1,7 @@
 <?php
 
+header('Acess-Control-Allow-Origin: *');
+
 // Site owners email address
 $siteOwnersEmail = 'ticola.space@gmail.com';
 

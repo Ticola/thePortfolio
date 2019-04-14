@@ -334,6 +334,7 @@
 
                     type: "POST",
                     url: "inc/sendEmail.php",
+                    dataType: "jsonp",
                     data: $(form).serialize(),
                     beforeSend: function () {
 
