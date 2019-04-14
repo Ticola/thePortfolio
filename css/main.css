@@ -376,7 +376,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: #39b54a;
+    color: #ffce76;
 }
 
 dd {
@@ -502,7 +502,7 @@ form,
 }
 
 .pace .pace-progress {
-    background: #39b54a;
+    background: #ffce76;
     position: fixed;
     z-index: 900;
     top: 0;
@@ -527,7 +527,7 @@ form,
     left: 0;
     right: 0;
     bottom: 0;
-    background: #050505;
+    background: #010101;
     z-index: 800;
     height: 100%;
     width: 100%;
@@ -545,7 +545,7 @@ form,
 }
 
 .line-scale-pulse-out > div {
-    background-color: #39b54a;
+    background-color: #ffce76;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -772,7 +772,7 @@ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-text-fill-color: #39b54a;
+    -webkit-text-fill-color: #ffce76;
     transition: background-color 5000s ease-in-out 0s;
 }
 
