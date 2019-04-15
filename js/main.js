@@ -333,8 +333,8 @@
                 $.ajax({
 
                     type: "POST",
-                    url: "inc/sendEmail.php",
-                    dataType: "jsonp",
+                    url: window.local,
+                    cache: false,
                     data: $(form).serialize(),
                     beforeSend: function () {
 
