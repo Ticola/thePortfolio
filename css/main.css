@@ -2676,6 +2676,26 @@ html.no-csstransitions .home-content__main {
     transform: translate3d(0, 0, 0);
 }
 
+.works-button-live {
+    border-radius: 25px;
+    background-color: #a2a8d3;
+    border: #113f67;
+}
+
+.works-button-live:hover {
+    background-color: #113f67;
+  
+}
+
+.works-button-repo {
+    border-radius: 25px;
+    background-color: #38598b;
+    border: #113f67;
+}
+
+.works-button-repo:hover {
+    background-color: #113f67;
+}
 
 /* ------------------------------------------------------------------- 
  * responsive:
