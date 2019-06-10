@@ -520,7 +520,8 @@
 
                 <h3 class="h6">Send A Message</h3>
 
-                <form name="contactForm" id="contactForm" method="POST" data-netlify="true" novalidate="novalidate">
+                <form name="contactForm" id="contactForm" method="post"
+                    action="https://formspree.io/ticola.space@gmail.com" novalidate="novalidate">
                     <fieldset>
 
                         <div class="form-field">
@@ -540,9 +541,9 @@
                                 cols="50" required="" aria-required="true" class="full-width"></textarea>
                         </div>
                         <div class="form-field">
-                            <button type="submit" full-width btn--primary">Submit</button>
+                            <button type="submit" full-width btn--primary>Submit</button>
                             <div class="submit-loader">
-                                <div class="text-loader">Sending...</div>
+                                <div class="text-loader" submission-created>Sending...</div>
                                 <div class="s-loader">
                                     <div class="bounce1"></div>
                                     <div class="bounce2"></div>
