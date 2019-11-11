@@ -74,7 +74,7 @@ html, body {
 }
 
 body {
-    background: #000000;
+    background: rgba(20, 20, 26);
     font-family: "lora-regular", serif;
     font-size: 1.7rem;
     font-style: normal;
@@ -90,13 +90,13 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-    color: #0087cc;
+    color: #58508d;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 a:hover, a:focus, a:active {
-    color: #39b54a;
+    color: #ff6361;
 }
 
 a:hover, a:active {
@@ -483,6 +483,7 @@ form,
 .video-container,
 .cl-custom-select {
     margin-bottom: 3rem;
+    letter-spacing: 0.05rem;
 }
 
 
@@ -502,7 +503,7 @@ form,
 }
 
 .pace .pace-progress {
-    background: #ffce76;
+    background: #58508d;
     position: fixed;
     z-index: 900;
     top: 0;
@@ -527,7 +528,7 @@ form,
     left: 0;
     right: 0;
     bottom: 0;
-    background: #010101;
+    background: #003f5c;
     z-index: 800;
     height: 100%;
     width: 100%;
@@ -545,9 +546,9 @@ form,
 }
 
 .line-scale-pulse-out > div {
-    background-color: #ffce76;
-    width: 4px;
-    height: 35px;
+    background-color: #58508d;
+    width: 5px;
+    height: 40px;
     border-radius: 2px;
     margin: 2px;
     -webkit-animation-fill-mode: both;
@@ -872,13 +873,14 @@ input[type="button"].btn--primary:focus {
 
 .btn--stroke, button.btn--stroke {
     background: transparent !important;
-    border: 0.2rem solid #39b54a;
-    color: #39b54a;
+    border: 0.2rem solid #f0ece2;
+    color: #f0ece2;
 }
 
 .btn--stroke:hover, button.btn--stroke:hover {
-    border: 0.2rem solid #000000;
-    color: #000000;
+    background: #f0ece2;
+    border: 0.2rem solid #f0ece2;
+    color: #f0ece2;
 }
 
 .btn--pill, button.btn--pill {
@@ -892,13 +894,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 0;
 }
 
-
 /* =================================================================== 
  * # additional components
  *
  * ------------------------------------------------------------------- */
-
-
+  
 /* ------------------------------------------------------------------- 
  * ## alert box
  * ------------------------------------------------------------------- */
@@ -1154,7 +1154,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     top: -3.6rem;
     display: block;
     font-family: "montserrat-regular", sans-serif;
-    color: #FFFFFF;
+    color: #f0ece2;
     font-size: 1.1rem;
     line-height: 1;
     background: #000000;
@@ -1221,7 +1221,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .display-1--light {
-    color: #FFFFFF;
+    color: #f0ece2;
 }
 
 .display-2 {
@@ -1233,7 +1233,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .display-2--light {
-    color: #FFFFFF;
+    color: #f0ece2;
 }
 
 .subhead + .display-2 {
@@ -1246,14 +1246,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    color: #acdbdf;
+    color: #ff6361;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.subhead--dark {
-    color: #acdbdf;
-}
 
 
 /* ------------------------------------------------------------------- 
@@ -1509,7 +1506,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .header-nav a:hover,
 .header-nav a:focus,
 .header-nav a:active {
-    color: white;
+    color: #f0ece2;
 }
 
 .header-nav h3 {
@@ -1520,7 +1517,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     letter-spacing: .25rem;
     margin-bottom: 4.8rem;
     margin-top: .9rem;
-    color: #ffce76;
+    color: #ff6361;
 }
 
 .header-nav p {
@@ -1549,7 +1546,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-nav__list a,
 .header-nav__list a:visited {
-    color: #FFFFFF;
+    color: #f0ece2;
 }
 
 .header-nav__social {
@@ -1571,7 +1568,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-nav__social li a:hover,
 .header-nav__social li a:focus {
-    color: white;
+    color: #f0ece2;
 }
 
 .header-nav__social li:last-child {
@@ -1599,7 +1596,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     height: 2px;
     width: 12px;
-    background-color: #FFFFFF;
+    background-color: #f0ece2;
     position: absolute;
     top: 50%;
     left: 9px;
@@ -1658,7 +1655,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #ffce76;
+    color: #ff6361;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -1672,7 +1669,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-menu-toggle:hover, .header-menu-toggle:focus {
-    color: #FFFFFF;
+    color: #f0ece2;
 }
 
 .header-menu-text {
@@ -1694,7 +1691,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     top: 50%;
     right: auto;
     bottom: auto;
-    background-color: white;
+    background-color: #f0ece2;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -1738,6 +1735,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 @media only screen and (max-width: 400px) {
     .header-menu-text {
         display: none;
+    }
+    .site-logo img {
+        width: 125px;
+        margin-top: 0px;
     }
 }
 
@@ -1806,8 +1807,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__buttons .btn {
     width: 215px;
-    border-color: #FFFFFF;
-    color: #FFFFFF;
+    border-color: #f0ece2;
+    color: #f0ece2;
     margin: 1.5rem 1.5rem 0 0;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
@@ -1820,8 +1821,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__buttons .btn:hover, 
 .home-content__buttons .btn:focus {
-    background: #FFFFFF !important;
-    color: #000000;
+    background: #f0ece2 !important;
+    color: #003f5c;
 }
 
 .home-content__scroll {
@@ -1835,16 +1836,17 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    color: #FFFFFF;
+    color: #f0ece2;
     position: relative;
     display: inline-block;
     line-height: 3rem;
     padding-left: 2.5rem;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
 }
 
 .home-content__scroll a::before {
-    border-bottom: 2px solid #69779b;
-    border-right: 2px solid #69779b;
+    border-bottom: 2px solid #f0ece2;
+    border-right: 2px solid #f0ece2;
     content: '';
     display: block;
     height: 8px;
@@ -1868,7 +1870,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #69779b;
+    background-color: #f0ece2;
     position: absolute;
     right: 7.2rem;
     bottom: 0;
@@ -1891,7 +1893,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social a {
-    color: white;
+    color: #f0ece2;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
@@ -1923,12 +1925,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 33px;
     height: 33px;
     line-height: calc(33px - 4px);
-    border: 2px solid #FFFFFF;
+    border: 2px solid #f0ece2;
     border-radius: 50%;
 }
 
 .home-social span {
-    color: #acdbdf;
+    color: #f0ece2;
     right: 4.5rem;
     font-size: 1.3rem;
     opacity: 0;
@@ -1939,6 +1941,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     -webkit-transform-origin: 100% 50%;
     -ms-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
 }
 
 .home-social li:hover span {
@@ -2184,7 +2187,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #010101;
+    background-color: rgba(20, 20, 26);
     color: #f0ece2;
     position: relative;
 }
@@ -2225,7 +2228,7 @@ html.no-csstransitions .home-content__main {
     font-family: "montserrat-bold", sans-serif;
     font-size: 8.4rem;
     line-height: 1;
-    color: #ffce76;
+    color: #58508d;
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2245,7 +2248,7 @@ html.no-csstransitions .home-content__main {
     display: block;
     width: 2px;
     height: 10.2rem;
-    background-color: #FFFFFF;
+    background-color: #58508d;
     position: absolute;
     right: 7.2rem;
     top: 0;
@@ -2354,7 +2357,7 @@ html.no-csstransitions .home-content__main {
 .s-services {
     padding-top: 16.2rem;
     padding-bottom: 13.2rem;
-    background-color: #69779b;
+    background-color: #58508d;
     color: #f0ece2;
     position: relative;
 }
@@ -2389,7 +2392,7 @@ html.no-csstransitions .home-content__main {
 
 .services-list .service-icon {
     float: left;
-    color: #ffce76;
+    color: #bc5090;
     font-size: 4.8rem;
     margin-top: -.6rem;
 }
@@ -2476,14 +2479,14 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-    padding: 0 0 20rem 0;
+    padding: 0 0 25rem 0;
     min-height: 800px;
     position: relative;
 }
 
 .s-works .intro-wrap {
     padding: 15rem 0 25.2rem;
-    background: #000000;
+    background: rgba(20, 20, 26);
 }
 
 .works-content {
@@ -2585,7 +2588,7 @@ html.no-csstransitions .home-content__main {
     font-family: "montserrat-semibold", sans-serif;
     font-size: 1.4rem;
     line-height: 1.286;
-    color: #FFFFFF;
+    color: #f0ece2;
     text-transform: uppercase;
     letter-spacing: .2rem;
     margin: 0 0 .3rem 0;
@@ -2605,8 +2608,8 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__project-link {
     display: block;
-    color: #FFFFFF;
-    box-shadow: 0 0 0 1px #FFFFFF;
+    color: #f0ece2;
+    box-shadow: 0 0 0 1px #f0ece2;
     border-radius: 50%;
     height: 4.2rem;
     width: 4.2rem;
@@ -2641,7 +2644,7 @@ html.no-csstransitions .home-content__main {
 .item-folio__project-link:hover,
 .item-folio__project-link:focus,
 .item-folio__project-link:active {
-    background-color: #FFFFFF;
+    background-color: #f0ece2;
     color: #000000;
 }
 
@@ -2677,9 +2680,10 @@ html.no-csstransitions .home-content__main {
 }
 
 .works-button-live {
-    border-radius: 25px;
-    background-color: #a2a8d3;
-    border: #113f67;
+    background: transparent !important;
+    border: 0.2rem solid #f0ece2;
+    color: #f0ece2;
+    width: 22rem;
 }
 
 .works-button-live:hover {
@@ -2688,13 +2692,14 @@ html.no-csstransitions .home-content__main {
 }
 
 .works-button-repo {
-    border-radius: 25px;
-    background-color: #38598b;
-    border: #113f67;
+    background: transparent !important;
+    border: 0.2rem solid #f0ece2;
+    color: #f0ece2;
+    width: 22rem;
 }
 
 .works-button-repo:hover {
-    background-color: #113f67;
+    background-color: #e8ff1d;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2731,9 +2736,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-    background-image: url("../images/contact.jpg");
-    background-repeat: repeat;
-    padding-top: 15rem;
+    padding-top: 25rem;
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);
     position: relative;
@@ -2746,7 +2749,7 @@ html.no-csstransitions .home-content__main {
     width: 100%;
     height: 100%;
     opacity: .4;
-    background-color: #000000;
+    background-color: #bc5090;
 }
 
 .s-contact .form-field {
@@ -2770,7 +2773,7 @@ html.no-csstransitions .home-content__main {
     letter-spacing: .1rem;
     padding: 0 2rem;
     margin: 0;
-    color: #FFFFFF;
+    color: #f0ece2;
     background: #0075f6;
 }
 
@@ -2789,7 +2792,7 @@ html.no-csstransitions .home-content__main {
     display: block;
     width: 2px;
     height: 20.4rem;
-    background-color: #69779b;
+    background-color: #58508d;
     position: absolute;
     left: 50%;
     top: -10.2rem;
@@ -2811,7 +2814,7 @@ html.no-csstransitions .home-content__main {
 .contact-content h3 {
     margin-top: 0;
     margin-bottom: 6.6rem;
-    color: #FFFFFF;
+    color: #f0ece2;
 }
 
 .contact-content h5 {
@@ -2842,13 +2845,14 @@ html.no-csstransitions .home-content__main {
 .contact-content input[type="password"]:focus,
 .contact-content textarea:focus,
 .contact-content select:focus {
-    color: #FFFFFF;
+    color: #f0ece2;
     border-bottom: 1px solid #ffce76;
 }
 
 .contact-content button,
 .contact-content .btn {
     margin-top: 3.6rem;
+    width: 100%;
 }
 .contact-content input::-webkit-input-placeholder,
 .contact-content select::-webkit-input-placeholder,
@@ -2929,7 +2933,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-social li a {
-    color: white;
+    color: #f0ece2;
 }
 
 .contact-social li a:hover, 
@@ -2984,7 +2988,7 @@ html.no-csstransitions .home-content__main {
     font-size: 1.3rem;
     font-weight: bold;
     line-height: 1.846;
-    color: #FFFFFF;
+    color: #f0ece2;
     letter-spacing: .2rem;
     text-transform: uppercase;
 }
@@ -3013,7 +3017,7 @@ html.no-csstransitions .home-content__main {
 .s-loader > div {
     width: 9px;
     height: 9px;
-    background-color: #FFFFFF;
+    background-color: #f0ece2;
     border-radius: 100%;
     display: inline-block;
     margin-right: .9rem;
@@ -3128,7 +3132,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 footer {
-    padding: 0.5rem 0 5rem;
+    padding: 0rem 0 2.5rem;
     font-family: "montserrat-light", sans-serif;
     font-size: 15px;
     line-height: 2;
@@ -3163,7 +3167,7 @@ footer .row {
 .footer-bottom {
     margin-top: 3rem;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .footer-bottom .copyright span {
@@ -3197,9 +3201,9 @@ footer .row {
     text-decoration: none;
     border: 0 none;
     display: block;
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
     text-align: center;
     background: black;
     color: rgba(255, 255, 255, 0.5);
@@ -3215,7 +3219,7 @@ footer .row {
 }
 
 .go-top a:hover, .go-top a:focus {
-    color: #FFFFFF;
+    color: #f0ece2;
 }
 
 
