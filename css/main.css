@@ -3132,9 +3132,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 footer {
-    padding: 0rem 0 2.5rem;
     font-family: "montserrat-light", sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 2;
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
@@ -3165,7 +3164,8 @@ footer .row {
  * ## footer bottom
  * --------------------------------------------------------------- */
 .footer-bottom {
-    margin-top: 3rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
     text-align: center;
     font-size: 12px;
 }
