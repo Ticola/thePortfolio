@@ -502,7 +502,7 @@ form,
 }
 
 .pace .pace-progress {
-    background: #58508d;
+    background: #fe875d;
     position: fixed;
     z-index: 900;
     top: 0;
@@ -527,7 +527,7 @@ form,
     left: 0;
     right: 0;
     bottom: 0;
-    background: #003f5c;
+    background: rgba(33, 33, 43);
     z-index: 800;
     height: 100%;
     width: 100%;
@@ -545,7 +545,7 @@ form,
 }
 
 .line-scale-pulse-out > div {
-    background-color: #58508d;
+    background-color: #fe875d;
     width: 5px;
     height: 40px;
     border-radius: 2px;
