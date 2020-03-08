@@ -112,7 +112,7 @@ a:hover, a:active {
 h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "montserrat-medium", sans-serif;
-    color: #000000;
+    color: #aacfdd;
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -1227,7 +1227,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-family: "montserrat-medium", sans-serif;
     font-size: 5.2rem;
     line-height: 1.255;
-    color: #010101;
+    color: #f0ece2;
     margin-top: 0;
 }
 
@@ -1686,7 +1686,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     height: 2px;
     margin-top: -1px;
     position: absolute;
-    left: 10px;
+    left: 13px;
     top: 50%;
     right: auto;
     bottom: auto;
@@ -2240,7 +2240,7 @@ html.no-csstransitions .home-content__main {
 .stats h5 {
     font-family: "montserrat-semibold", sans-serif;
     margin-top: 1.8rem;
-    color: #f0ece2;
+    color: #aacfdd;
     font-size: 1.8rem;
     line-height: 1.333;
     position: relative;
@@ -2357,9 +2357,9 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    padding-top: 16.2rem;
-    padding-bottom: 13.2rem;
-    background-color: #37375e;
+    padding-top: 12.2rem;
+    padding-bottom: 9.2rem;
+    background-color: transparent;
     color: #f0ece2;
     position: relative;
 }
@@ -2393,7 +2393,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .services-list .service-icon {
-    color: #aacfdd;
+    color: #356288;
     width: 35px;
     margin-top: 10px;
     position: absolute;
@@ -2463,12 +2463,14 @@ html.no-csstransitions .home-content__main {
     .services-desc {
         font-size: 1.6rem;
         max-width: 600px;
+        text-align: center;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .s-services {
-        padding-top: 12rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
     .services-list .service-item:nth-child(n) {
         padding-right: 10px;
@@ -3293,8 +3295,8 @@ footer .row {
         display: none;
     }
     .go-top {
-        right: 0;
-        bottom: 0;
+        right: 20px;
+        bottom: 20px;
     }
 }
 
