@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <!-- Mobile Specific Metas ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS ================================================== -->
     <link rel="stylesheet" href="css/base.css">
@@ -35,7 +35,7 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="images/Logo.png" alt="Homepage">
+                <img src="images/Logo-dark-blue.png" alt="Homepage">
             </a>
         </div>
 
@@ -49,17 +49,17 @@
                 <ul class="header-nav__list">
                     <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
                     <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll" href="#services" title="services">Services</a></li>
                     <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll" href="#services" title="services">Services</a></li>
                     <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
                 </ul>
 
                 <ul class="header-nav__social">
                     <li>
-                        <a href="https://github.com/Ticola" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/edgar-reynaga-057993106/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/edgar-reynaga-057993106/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Ticola" target="_blank"><i class="fab fa-github"></i></a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/_ticola/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -78,14 +78,42 @@
     </header> <!-- end s-header -->
 
     <!-- Home ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/Landing1.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        <video id="bgvid" playsinline autoplay muted loop>
+          <source src="images/masthead-light-wave--video.mp4" type="video/mp4">
+        </video>
 
         <div class="home-content">
 
             <div class="row home-content__main">
                 <h3>Welcome,</h3>
-                <h1>With every line of code <br> and every creative experience, <br> I strive to make the world <br> a beautiful place.</h1>
-
+                <h1 class="h1-only-mobile">With every line of code <br> and every creative experience, <br> I strive to make the world <br> a beautiful place.</h1>
+                <h1 class="letters hide-mobile">
+                    <span class="with">With</span>&nbsp;
+                    <span class="every">every</span>&nbsp;
+                    <span class="line">line</span>&nbsp;
+                    <span class="of">of</span>&nbsp;
+                    <span class="code">code</span>&nbsp;
+                </h1>
+                <h1 class="letters hide-mobile">
+                    <span class="and">and</span>&nbsp;
+                    <span class="every-2">every</span>&nbsp;
+                    <span class="design">design</span>&nbsp;
+                    <span class="experience">experience,</span>&nbsp;
+                </h1>
+                <h1 class="letters hide-mobile">
+                    <span class="I">I</span>&nbsp;
+                    <span class="strive">strive</span>&nbsp;
+                    <span class="to">to</span>&nbsp;
+                    <span class="make">make</span>&nbsp;
+                    <span class="the">the</span>&nbsp;
+                    <span class="world">world</span>&nbsp;
+                </h1>
+                <h1 class="letters hide-mobile">
+                    <span class="a">a</span>&nbsp;
+                    <span class="beautiful">beautiful</span>&nbsp;
+                    <span class="place">place.</span>&nbsp;
+                </h1>
                 <div class="home-content__buttons">
                     <a href="#contact" class="smoothscroll btn btn--stroke button">Start a Project</a>
                     <a href="#about" class="smoothscroll btn btn--stroke button">More About Me</a>
@@ -104,10 +132,10 @@
 
         <ul class="home-social">
             <li>
-                <a href="https://github.com/Ticola" target="_blank"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                <a href="https://www.linkedin.com/in/edgar-reynaga-057993106/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/edgar-reynaga-057993106/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span></a>
+                <a href="https://github.com/Ticola" target="_blank"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
             </li>
             <li>
                 <a href="https://www.instagram.com/_ticola/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
@@ -129,22 +157,22 @@
 
         <div class="row about-desc" data-aos="fade-up">
             <div class="col-full">
-                <p>I am a web developer and content creator currently living in Chicago, IL. I've always been drawn to the overlap between design and development. My skills are broad: from photography to graphic design, front end to back end development. I enjoy each aspect, and love collaborating with brands and building progressive web applications from start to finish.</p>
+                <p>I’m a creative web developer currently living in Chicago, IL. I stand on a sweet spot where design and code intersect. My abundant curiosity fuels me in the pursuit of many interests, hobbies, and artistic endeavors. I can’t help but continue to inspire and challenge myself with every project I am a part of.</p>
             </div>
         </div> <!-- end about-desc -->
 
         <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
 
             <div class="col-block stats__col ">
-                <div class="stats__count">72</div>
+                <div class="stats__count">42</div>
                 <h5>Projects Completed</h5>
             </div>
             <div class="col-block stats__col">
-                <div class="stats__count">186</div>
+                <div class="stats__count">161</div>
                 <h5>Cups of Kombucha</h5>
             </div>
             <div class="col-block stats__col">
-                <div class="stats__count">2426</div>
+                <div class="stats__count">1729</div>
                 <h5>Google Searches</h5>
             </div>
             <div class="col-block stats__col">
@@ -157,61 +185,6 @@
         <div class="about__line"></div>
 
     </section> <!-- end s-about -->
-
-    <!-- Services ================================================== -->
-    <section id='services' class="s-services">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">What I Do</h3>
-                <h1 class="display-2">Everything you need to launch and grow your business.</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fingerprint" class="svg-inline--fa fa-fingerprint fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256.12 245.96c-13.25 0-24 10.74-24 24 1.14 72.25-8.14 141.9-27.7 211.55-2.73 9.72 2.15 30.49 23.12 30.49 10.48 0 20.11-6.92 23.09-17.52 13.53-47.91 31.04-125.41 29.48-224.52.01-13.25-10.73-24-23.99-24zm-.86-81.73C194 164.16 151.25 211.3 152.1 265.32c.75 47.94-3.75 95.91-13.37 142.55-2.69 12.98 5.67 25.69 18.64 28.36 13.05 2.67 25.67-5.66 28.36-18.64 10.34-50.09 15.17-101.58 14.37-153.02-.41-25.95 19.92-52.49 54.45-52.34 31.31.47 57.15 25.34 57.62 55.47.77 48.05-2.81 96.33-10.61 143.55-2.17 13.06 6.69 25.42 19.76 27.58 19.97 3.33 26.81-15.1 27.58-19.77 8.28-50.03 12.06-101.21 11.27-152.11-.88-55.8-47.94-101.88-104.91-102.72zm-110.69-19.78c-10.3-8.34-25.37-6.8-33.76 3.48-25.62 31.5-39.39 71.28-38.75 112 .59 37.58-2.47 75.27-9.11 112.05-2.34 13.05 6.31 25.53 19.36 27.89 20.11 3.5 27.07-14.81 27.89-19.36 7.19-39.84 10.5-80.66 9.86-121.33-.47-29.88 9.2-57.88 28-80.97 8.35-10.28 6.79-25.39-3.49-33.76zm109.47-62.33c-15.41-.41-30.87 1.44-45.78 4.97-12.89 3.06-20.87 15.98-17.83 28.89 3.06 12.89 16 20.83 28.89 17.83 11.05-2.61 22.47-3.77 34-3.69 75.43 1.13 137.73 61.5 138.88 134.58.59 37.88-1.28 76.11-5.58 113.63-1.5 13.17 7.95 25.08 21.11 26.58 16.72 1.95 25.51-11.88 26.58-21.11a929.06 929.06 0 0 0 5.89-119.85c-1.56-98.75-85.07-180.33-186.16-181.83zm252.07 121.45c-2.86-12.92-15.51-21.2-28.61-18.27-12.94 2.86-21.12 15.66-18.26 28.61 4.71 21.41 4.91 37.41 4.7 61.6-.11 13.27 10.55 24.09 23.8 24.2h.2c13.17 0 23.89-10.61 24-23.8.18-22.18.4-44.11-5.83-72.34zm-40.12-90.72C417.29 43.46 337.6 1.29 252.81.02 183.02-.82 118.47 24.91 70.46 72.94 24.09 119.37-.9 181.04.14 246.65l-.12 21.47c-.39 13.25 10.03 24.31 23.28 24.69.23.02.48.02.72.02 12.92 0 23.59-10.3 23.97-23.3l.16-23.64c-.83-52.5 19.16-101.86 56.28-139 38.76-38.8 91.34-59.67 147.68-58.86 69.45 1.03 134.73 35.56 174.62 92.39 7.61 10.86 22.56 13.45 33.42 5.86 10.84-7.62 13.46-22.59 5.84-33.43z"></path></svg>                </div>
-                <div class="service-text">
-                    <h3 class="h2">Brand Identity</h3>
-                    <p class="services-desc">Establishing the components related to a product or service. Some of these items are the name, logo, tone, tagline, typeface, and shape that create an appeal. Setting guidelines and consistency is essential to any brand.</p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="expand" class="svg-inline--fa fa-expand fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path></svg>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Art Direction</h3>
-                    <p class="services-desc">Often referred to as communication design. It involves producing the content and images necessary to communicate your brand image with your target audience. Creating refined, impactful, and inspiring brand experiences that lead to positive outcomes.</p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="desktop" class="svg-inline--fa fa-desktop fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"></path></svg>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Front End Development</h3>
-                    <p class="services-desc">Working on the client side and mixing the server side. Building both the visual and responsive components of a website. Experience building with but not limited to: HTML5, CSS3, Bootstrap, JavaScript and React.js.</p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="database" class="svg-inline--fa fa-database fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"></path></svg>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Back End Development</h3>
-                    <p class="services-desc">Optimizing a project for speed and efficiency on the server-side and connecting with databases. Creating the logic with frameworks and databases such as: MySQL, MongoDB, Node.js and Express.js.</p>
-                </div>
-            </div>
-
-        </div> <!-- end services-list -->
-
-    </section> <!-- end s-services -->
 
     <!-- Works ================================================== -->
     <section id='works' class="s-works">
@@ -252,7 +225,7 @@
                             <div class="item-folio__caption">
                                 <p class="hide-mobile">Your kitchen is a reflection of you. Recharge and refresh with the new inspiring color of Kyoto Glow. – made possible in <a href="https://aislerocket.com/" target="_blank" title="Go to Aisle Rocket webpage">Aisle Rocket</a> development team.</p>
                                 <div class="works-content__buttons">
-                                    <a href="https://www.kitchenaid.com/color-of-the-year.html" target="_blank" class="btn btn--stroke button" title="Go to project webpage">Launch</a>          
+                                    <a href="https://www.kitchenaid.com/color-of-the-year.html" target="_blank" class="btn btn--stroke button" title="Go to live webpage">View Live</a>          
                                     <a href="/images/grid/brief_project-one-compressed.pdf" target="_blank" class="btn btn--stroke button" title="View project brief">Learn More</a>
                                 </div>
                             </div>
@@ -281,7 +254,7 @@
                             <div class="item-folio__caption">
                                 <p class="hide-mobile">Introducing the new commercial-style range. Made to keep up with your potential. Now personalized to your style in 9 curated colors. – made possible in <a href="https://aislerocket.com/" target="_blank" title="Go to Aisle Rocket webpage">Aisle Rocket</a> development team.</p>
                                 <div class="works-content__buttons">
-                                    <a href="https://www.kitchenaid.com/in-store/commercial-style-range.html" target="_blank" class="btn btn--stroke button" title="Go to project webpage">Launch</a>
+                                    <a href="https://www.kitchenaid.com/in-store/commercial-style-range.html" target="_blank" class="btn btn--stroke button" title="Go to live webpage">View Live</a>
                                     <a href="/images/grid/brief_project-two-compressed.pdf" target="_blank" class="btn btn--stroke button" title="View project brief">Learn More</a>
                                 </div>
                             </div>
@@ -310,7 +283,7 @@
                             <div class="item-folio__caption">
                                 <p class="hide-mobile">Make the process of owning and maintaining a Whirlpool<sup>&reg;</sup> Appliance seamless from start to finish. – made possible in <a href="https://aislerocket.com/" target="_blank" title="Go to Aisle Rocket webpage">Aisle Rocket</a> development team.</p>
                                 <div class="works-content__buttons">
-                                    <a href="https://xd.adobe.com/view/e715a96e-d64d-4326-54c2-2408822a742d-9124/" target="_blank" class="btn btn--stroke button" title="View project prototype">View Prototype</a>     
+                                    <a href="https://xd.adobe.com/view/e715a96e-d64d-4326-54c2-2408822a742d-9124/" target="_blank" class="btn btn--stroke button" title="View project prototype">View Design</a>
                                 </div>
                             </div>
 
@@ -322,6 +295,42 @@
         </div> <!-- end works-content -->
 
     </section> <!-- end s-works -->
+
+    <!-- Services ================================================== -->
+    <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">What I Do</h3>
+                <h1 class="display-2">Exploring the web on a new level.</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="desktop" class="svg-inline--fa fa-desktop fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"></path></svg>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Frontend Development</h3>
+                    <p class="services-desc">Developing both the visual and responsive components that make up a  website. Experience building with yet not limited to HTML5, CSS3, JavaScript/jQuery, Wordpress, and React.js.</p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="expand" class="svg-inline--fa fa-expand fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path></svg>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Art Direction</h3>
+                    <p class="services-desc">Involves establishing the elements necessary to communicate a brand's image with its target audience. Creating refined, and impactful brand experiences that lead to positive outcomes.</p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
 
     <!-- Contact ================================================== -->
     <section id="contact" class="s-contact">
@@ -357,7 +366,7 @@
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>Made with &nbsp;&#129505;&nbsp;by TICOLA</span>
+                    <span>Made with &nbsp;&#129505;&nbsp;by Ticola</span>
                 </div>
 
                 <div class="go-top">
@@ -424,6 +433,7 @@
     </div>
 
     <!-- Java Script ================================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>

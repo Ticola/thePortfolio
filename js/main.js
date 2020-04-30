@@ -443,6 +443,58 @@
     };
 
 
+    function transformLetters() {
+
+        const $ = document.querySelector.bind(document);
+        const first = $(".with");
+        const second = $(".every");
+        const third = $(".line");
+        const fourth = $(".of");
+        const fifth = $(".code");
+        const sixth = $(".and");
+        const seventh = $(".every-2");
+        const eighth = $(".design");
+        const ninth = $(".experience");
+        const tenth = $(".I");
+        const eleventh = $(".strive");
+        const twelfth = $(".to");
+        const thirteenth = $(".make");
+        const fourteenth = $(".the");
+        const fifteenth = $(".world");
+        const sixteenth = $(".a");
+        const seventeenth = $(".beautiful");
+        const eighteenth = $(".place");
+
+        const scroll = window.scrollY;
+        // console.log({AmountScrolled: scroll});
+        first.style.transform = `translate3d(0, ${scroll*1.4}px, 0) rotateY(${-scroll*0.15}deg)`;
+        second.style.transform = `translate3d(${-scroll*0.95}px, ${scroll*0.90}px, 0) rotate(${-scroll*0.1}deg)`;
+        third.style.transform = `translate3d(${scroll*0.65}px, ${scroll*1.0}px, 0) rotate(${scroll*0.2}deg)`;
+        fourth.style.transform = `translate3d(0, ${scroll*0.5}px, 0) rotateY(${scroll*1.0}deg)`;
+        fifth.style.transform = `translate3d(${-scroll*0.25}px, ${scroll*0.70}px, 0) rotate(${-scroll*0.1}deg)`;
+        sixth.style.transform = `translate3d(${-scroll*0.50}px, ${scroll*0.30}px, 0) rotate(${scroll*1.0}deg)`;
+        seventh.style.transform = `translate3d(${scroll*0.85}px, ${scroll*1.20}px, 0) rotate(${scroll*0.2}deg)`;
+        eighth.style.transform = `translate3d(0, ${scroll*0.35}px, 0) rotateY(${-scroll*0.3}deg)`;
+        ninth.style.transform = `translate3d(${-scroll*0.45}px, ${scroll*0.90}px, 0) rotate(${-scroll*0.1}deg)`;
+        tenth.style.transform = `translate3d(0, ${scroll*0.5}px, 0) rotateY(${scroll*1.0}deg)`;
+        eleventh.style.transform = `translate3d(${-scroll*0.25}px, ${scroll*0.70}px, 0) rotate(${-scroll*0.1}deg)`;
+        twelfth.style.transform = `translate3d(${-scroll*0.50}px, ${scroll*0.30}px, 0) rotate(${scroll*1.0}deg)`;
+        thirteenth.style.transform = `translate3d(${scroll*0.85}px, ${scroll*1.20}px, 0) rotate(${scroll*1.0}deg)`;
+        fourteenth.style.transform = `translate3d(0, ${scroll*0.35}px, 0) rotateY(${-scroll*0.3}deg)`;
+        fifteenth.style.transform = `translate3d(${-scroll*0.45}px, ${scroll*0.90}px, 0) rotate(${-scroll*0.7}deg)`;
+        sixteenth.style.transform = `translate3d(${scroll*0.65}px, ${scroll*1.0}px, 0) rotate(${scroll*0.2}deg)`;
+        seventeenth.style.transform = `translate3d(${-scroll*0.45}px, ${scroll*0.90}px, 0) rotate(${-scroll*0.4}deg)`;
+        eighteenth.style.transform = `translate3d(0, ${scroll*1.4}px, 0) rotateY(${-scroll*0.2}deg)`;
+    }
+
+    window.addEventListener("scroll", transformLetters);
+
+
+
+
+
+
+
     /* Initialize
      * ------------------------------------------------------ */
     (function ssInit() {
@@ -461,6 +513,7 @@
         clAOS();
         clAjaxChimp();
         clBackToTop();
+        transformLetters();
 
     })();
 
