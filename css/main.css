@@ -9,7 +9,9 @@ html {
 }
 
 html, body {
-    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 body {
@@ -185,7 +187,9 @@ p,
     z-index: 800;
     height: 100%;
     width: 100%;
-    display: table;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .no-js #preloader, .oldie #preloader {
@@ -193,7 +197,7 @@ p,
 }
 
 #loader {
-    display: table-cell;
+    display: flex;
     text-align: center;
     vertical-align: middle;
 }
@@ -634,6 +638,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     overflow-x: hidden;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    backface-visibility: hidden;
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateX(100%);
@@ -879,7 +884,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     min-height: 786px;
     background-color: transparent;
     position: relative;
-    display: table;
+    display: flex;
 }
 
 .no-js .s-home {
@@ -887,7 +892,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content {
-    display: table-cell;
+    display: flex;
     width: 100%;
     height: 100%;
     vertical-align: middle;
@@ -940,6 +945,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .home-content__main {
     padding-top: 15rem;
     position: relative;
+    align-self: center;
 }
 
 .home-content__buttons {
@@ -1683,7 +1689,8 @@ html.no-csstransitions .home-content__main {
 
 .contact__desc {
     color: #2e2e2e;
-    width: 700px;
+    max-width: 700px;
+    padding: 0 25px;
     margin: 0 auto;
     margin-bottom: 2em;
     text-align: center;
