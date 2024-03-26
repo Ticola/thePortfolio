@@ -11,25 +11,6 @@
     var doc = document.documentElement;
     doc.setAttribute('data-useragent', navigator.userAgent);
 
-
-    /* Preloader
-     * -------------------------------------------------- */
-    var clPreloader = function () {
-
-        $("html").addClass('cl-preload');
-
-        $WIN.on('load', function () {
-
-            $("#loader").fadeOut("slow", function () {
-                $("#preloader").delay(300).fadeOut("slow");
-            });
-
-            $("html").removeClass('cl-preload');
-            $("html").addClass('cl-loaded');
-
-        });
-    };
-
     /* Menu on Scrolldown
      * ------------------------------------------------------ */
     var clMenuOnScrolldown = function () {
@@ -233,50 +214,33 @@
         });
     };
 
-
     function transformLetters() {
-
+        const classes = [
+            ".i", ".strive", ".to", ".make", ".the", ".world", ".a", ".beautiful", ".place", 
+            ".one", ".line", ".of", ".code", ".at", ".a-2", ".time"
+        ];
+    
         const $ = document.querySelector.bind(document);
-        const first = $(".i");
-        const second = $(".strive");
-        const third = $(".to");
-        const fourth = $(".make");
-        const fifth = $(".the");
-        const sixth = $(".world");
-        const seventh = $(".a");
-        const eighth = $(".beautiful");
-        const ninth = $(".place");
-        const tenth = $(".one");
-        const eleventh = $(".line");
-        const twelfth = $(".of");
-        const thirteenth = $(".code");
-        const fourteenth = $(".at");
-        const fifteenth = $(".a-2");
-        const sixteenth = $(".time");
-
+        const elements = classes.map(cls => $(cls));
+    
         const scroll = window.scrollY;
-        first.style.transform = `translate3d(0, ${scroll*1.4}px, 0) rotateY(${-scroll*0.45}deg)`;
-        second.style.transform = `translate3d(${-scroll*0.95}px, ${scroll*0.90}px, 0) rotate(${-scroll*0.1}deg)`;
-        third.style.transform = `translate3d(${scroll*0.65}px, ${scroll*1.0}px, 0) rotate(${scroll*0.2}deg)`;
-        fourth.style.transform = `translate3d(${-scroll*0.5}px, ${scroll*0.50}px, 0) rotate(${-scroll*0.25}deg)`;
-        fifth.style.transform = `translate3d(${-scroll*0.25}px, ${scroll*0.70}px, 0) rotate(${-scroll*0.1}deg)`;
-        sixth.style.transform = `translate3d(${-scroll*0.50}px, ${scroll*0.30}px, 0) rotate(${scroll*1.0}deg)`;
-        seventh.style.transform = `translate3d(${scroll*0.85}px, ${scroll*1.20}px, 0) rotate(${scroll*0.2}deg)`;
-        eighth.style.transform = `translate3d(0, ${scroll*0.35}px, 0) rotateY(${-scroll*0.3}deg)`;
-        ninth.style.transform = `translate3d(${-scroll*0.45}px, ${scroll*0.90}px, 0) rotate(${-scroll*0.1}deg)`;
-        tenth.style.transform = `translate3d(0, ${scroll*0.5}px, 0) rotateY(${scroll*1.0}deg)`;
-        eleventh.style.transform = `translate3d(${-scroll*0.25}px, ${scroll*0.70}px, 0) rotate(${-scroll*0.1}deg)`;
-        twelfth.style.transform = `translate3d(${-scroll*0.50}px, ${scroll*0.30}px, 0) rotate(${scroll*1.0}deg)`;
-        thirteenth.style.transform = `translate3d(${scroll*0.85}px, ${scroll*1.20}px, 0) rotate(${scroll*1.0}deg)`;
-        fourteenth.style.transform = `translate3d(0, ${scroll*0.35}px, 0) rotateY(${-scroll*0.3}deg)`;
-        fifteenth.style.transform = `translate3d(${-scroll*0.45}px, ${scroll*0.90}px, 0) rotate(${-scroll*0.7}deg)`;
-        sixteenth.style.transform = `translate3d(${scroll*0.65}px, ${scroll*1.0}px, 0) rotate(${scroll*0.2}deg)`;
+    
+        elements.forEach((element, index) => {
+            const scrollFactorX = [-0.95, 0.65, -0.5, -0.25, -0.5, 0.85, 0, -0.45, 0, 0, -0.25, -0.5, 0.85, 0, -0.45, 0.65][index];
+            const scrollFactorY = [1.4, 0.9, 1, 0.5, 0.7, 0.3, 1.2, 0.35, 0.9, 0.5, 0.7, 0.3, 1.2, 0.35, 0.9, 1][index];
+            const rotationFactor = [-0.45, -0.1, 0.2, -0.25, -0.1, 1, 0.2, -0.3, -0.1, 1, -0.1, 1, 1, -0.3, -0.7, 0.2][index];
+    
+            const transformX = `translate3d(${scroll * scrollFactorX}px, ${scroll * scrollFactorY}px, 0)`;
+            const transformY = `rotate(${scroll * rotationFactor}deg)`;
+            const transform = `${transformX} ${transformY}`;
+    
+            element.style.transform = transform;
+        });
     }
 
     window.addEventListener("scroll", transformLetters);
 
     (function ssInit() {
-        clPreloader();
         clMenuOnScrolldown();
         clOffCanvas();
         clStatCount();
